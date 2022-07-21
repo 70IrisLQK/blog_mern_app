@@ -1,0 +1,105 @@
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_bg);
+    box-shadow: var(--shadow_color);
+
+    .row {
+        @media only screen and (max-width: 999px) {
+            flex-direction: column;
+
+            .col-4 {
+                width: 100%;
+            }
+        }
+
+        .col-4 {
+            .image-menubar {
+                label.menu-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    height: 35px;
+                    width: 35px;
+                    background-color: #ff9800;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    color: var(--main_bg);
+                }
+
+                height: 75px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 340px;
+
+                a.image {
+                    margin-left: -8px;
+                    width: 170px;
+                    height: 40px;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+        }
+
+        .col-8 {
+            ul.link-list {
+                height: 75px;
+                transition: all .5s;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 8px;
+
+                .link-item {
+                    a {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: var(--text_color);
+                    }
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 8px;
+
+                .link-item {
+                    background-color: var(--second_bg);
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
